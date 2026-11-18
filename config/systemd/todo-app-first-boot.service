@@ -1,0 +1,16 @@
+[Unit]
+Description=To-Do Application First Boot Initialization Service
+After=network.target mysql.service
+Wants=mysql.service
+ConditionPathExists=!/etc/todo-app/.initialized
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/var/www/todo-app/scripts/bootstrap.sh
+TimeoutSec=300
+StandardOutput=journal+console
+StandardError=journal+console
+
+[Install]
+WantedBy=multi-user.target
