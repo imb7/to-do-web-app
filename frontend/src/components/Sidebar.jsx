@@ -87,6 +87,7 @@ export const Sidebar = ({ isOpen, onClose }) => {
           <LogOut size={16} />
           <span>Log Out</span>
         </button>
+        <p className="sidebar-credit">Created by imb7</p>
       </div>
     </aside>
   );

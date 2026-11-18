@@ -859,6 +859,13 @@ button {
   margin: 0 auto 18px;
 }
 
+.sidebar-credit {
+  margin: 12px 0 0;
+  text-align: center;
+  font-size: 0.75rem;
+  color: var(--text-light);
+}
+
 /* Responsive */
 @media (max-width: 768px) {
   .sidebar {
